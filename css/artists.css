@@ -1,0 +1,200 @@
+/* Basic Reset and Global Styles */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Artist Profile */
+.artist-profile {
+    padding: 2rem 0;
+}
+
+.artist-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.artist-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artist-info {
+    max-width: 600px;
+}
+
+.artist-info h2 {
+    margin-bottom: 1rem;
+}
+
+.artist-info p {
+    margin-bottom: 0.5rem;
+}
+
+.artist-info span {
+    font-weight: bold;
+}
+
+.btn-follow {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-follow:hover {
+    background: #555;
+}
+
+/* Artist Discography */
+.artist-discovery {
+    margin-top: 2rem;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.album {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+}
+
+.album-info {
+    padding: 1rem;
+}
+
+.album-info h4 {
+    margin-bottom: 0.5rem;
+}
+
+.album-info p {
+    margin-bottom: 0.5rem;
+}
+
+.btn-download {
+    display: block;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-download:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .artist-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .artist-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album-list {
+        flex-direction: column;
+    }
+
+    .album {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .artist-info p {
+        font-size: 1rem;
+    }
+
+    .btn-follow {
+        font-size: 0.9rem;
+    }
+
+    .album-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .album-info p {
+        font-size: 0.9rem;
+    }
+}
